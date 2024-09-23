@@ -8,6 +8,7 @@ import About from './pages/About.jsx'
 import ProjectCard from './components/ProjectCard.jsx'
 import App from './App.jsx'
 import './index.css'
+import './App.css'
 
 const router = createBrowserRouter([
   {
