@@ -40,3 +40,140 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Define sunset color palette */
+:root {
+  --sunset-light: #FFD1A9; /* light orange */
+  --sunset-medium: #FF8C42; /* medium orange */
+  --sunset-dark: #D1495B; /* dark red */
+  --sunset-purple: #6A0572; /* deep purple */
+  --sunset-blue: #30336B; /* dark blue */
+  --sunset-yellow: #F4D35E; /* soft yellow */
+  --sunset-background-gradient: linear-gradient(180deg, #FF8C42, #D1495B, #6A0572, #30336B);
+  --text-light: #FFF3E1; /* light text color */
+  --text-dark: #2E2E2E; /* dark text color */
+}
+
+/* General Body Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', sans-serif;
+  background: var(--sunset-background-gradient);
+  color: var(--text-light);
+}
+
+/* Remove bullets and center the navigation */
+nav ul {
+  list-style: none; /* Removes bullets */
+  padding: 0; /* Removes default padding */
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Style for navigation links */
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: var(--sunset-yellow);
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--sunset-light);
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Headers */
+h1, h2, h3 {
+  color: var(--sunset-yellow);
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  background-color: var(--sunset-medium);
+  border: none;
+  color: var(--text-light);
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--sunset-dark);
+}
+
+/* Links */
+a {
+  color: var(--sunset-yellow);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--sunset-light);
+}
+
+/* Form Elements */
+input[type="text"], textarea {
+  background-color: var(--sunset-blue);
+  border: 2px solid var(--sunset-purple);
+  color: var(--text-light);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+input[type="text"]::placeholder, textarea::placeholder {
+  color: var(--sunset-light);
+}
+
+input[type="text"]:focus, textarea:focus {
+  border-color: var(--sunset-yellow);
+  outline: none;
+}
+
+/* Card Component */
+.card {
+  background-color: var(--sunset-blue);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px 0;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer */
+footer {
+  background-color: none;
+  text-align: center;
+  padding: 0px; /* Reduced padding to make the footer smaller */
+  font-size: 0.7rem; /* Optional: Reduce font size slightly */
+  color: var(--text-light);
+}
+
+footer a {
+  color: var(--sunset-yellow);
+  font-size: 0.9rem; /* Optional: Adjust link font size to match the footer text */
+}
+
