@@ -25,5 +25,8 @@ This project was created by Alex Balara with the assistance and utilization of X
 GitHub Repository
 https://github.com/abalara4/React-Portfolio.git
 
+Netlify Deployment
+https://alexbalaraportfolio.netlify.app
+
 ## License
 None
