@@ -1,15 +1,15 @@
 import React from 'react';
-import Header from './components/Header';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import Header from './components/Header'; // Adjust the path as necessary
+import { Outlet } from 'react-router-dom';
+
 
 const App = () => {
-  return (
-    <Router>
-    <div>
-      <Header />
-    </div>
-    </Router>
-  );
-}
+    return (
+        <div>
+            <Header />
+            <Outlet />
+        </div>
+    );
+};
 
 export default App;
